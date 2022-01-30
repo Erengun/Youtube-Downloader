@@ -11,7 +11,7 @@ def main():
 	yt = YouTube(link)
 	print("Downloading : ",yt.title)
 	mpx = input("Press 3 for mp3 \n Press 4 for mp4")
-	if mpx == 3:
+	if mpx == "3":
 		#show mp3 itags
 		print("Available mp3 itags : ")
 		for i in yt.streams.filter(progressive=True, file_extension='mp3').all():
@@ -25,7 +25,7 @@ def main():
 				main()
 			exit()
 		yt.streams.get_by_itag(itag).download()
-	elif mpx == 4:
+	elif mpx == "4":
 		#show mp4 itags
 		print("Available mp4 itags : ")
 		for i in yt.streams.filter(progressive=True, file_extension='mp4').all():
