@@ -42,6 +42,5 @@ def main():
 		else:
 			exit()
 
-# Fix
 if (__name__ == "__main__"):
     main()
