@@ -1,2 +1,2 @@
 # Youtube-Downloader
-Because i hate the websites ads
+Because i hate the website's ads
